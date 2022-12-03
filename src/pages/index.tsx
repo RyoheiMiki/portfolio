@@ -12,7 +12,7 @@ import { Footer } from "components/Footer";
 import { HeadlineArea } from "components/HeadlineArea";
 import { Introduction } from "components/Introduction";
 import { Profile } from "components/Profile";
-import { ProjectList } from "components/WorkList";
+import { WorkList } from "components/WorkList";
 import { flashAnimation } from "styles/animation";
 
 export default function Home() {
@@ -91,7 +91,7 @@ export default function Home() {
           />
         </Box>
         <VStack pt="8" spacing={20}>
-          <ProjectList />
+          <WorkList />
         </VStack>
       </VStack>
       <Footer />

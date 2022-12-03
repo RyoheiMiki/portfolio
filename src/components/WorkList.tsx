@@ -22,27 +22,20 @@ export const worksData = [
   },
 ];
 
-export const ProjectList: React.FC = () => (
+export const WorkList: React.FC = () => (
   <>
     {worksData.map((item) => (
-      <>
-        <Link target="_blank" href={item.link}>
-          <Card
-            key={item.title}
-            bg="transparent"
-            border="none"
-            boxShadow="none"
-          >
-            <CardBody>
-              <Image borderRadius={6} src={item.img} alt="Zennの記事" />
-              <Stack mt="6">
-                <Heading size="md">{item.title}</Heading>
-                {/* <Text color={"white"}>{item.text}</Text> */}
-              </Stack>
-            </CardBody>
-          </Card>
-        </Link>
-      </>
+      <Link key={item.link} target="_blank" href={item.link}>
+        <Card bg="transparent" border="none" boxShadow="none">
+          <CardBody>
+            <Image borderRadius={6} src={item.img} alt="Zennの記事" />
+            <Stack mt="6">
+              <Heading size="md">{item.title}</Heading>
+              {/* <Text color={"white"}>{item.text}</Text> */}
+            </Stack>
+          </CardBody>
+        </Card>
+      </Link>
     ))}
   </>
 );
