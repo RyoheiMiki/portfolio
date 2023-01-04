@@ -1,6 +1,6 @@
 import { Heading, Text, Box } from "@chakra-ui/react";
 import React from "react";
-import { introData } from "data";
+import { introData } from "@/data/index";
 
 export const Introduction: React.FC = () => (
   <>

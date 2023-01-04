@@ -8,12 +8,12 @@ import {
 } from "@chakra-ui/react";
 
 import { BsSunFill, BsMoonFill } from "react-icons/bs";
-import { Footer } from "components/Footer";
-import { HeadlineArea } from "components/HeadlineArea";
-import { Introduction } from "components/Introduction";
-import { Profile } from "components/Profile";
-import { WorkList } from "components/WorkList";
-import { flashAnimation } from "styles/animation";
+import { Footer } from "@/components/Footer";
+import { HeadlineArea } from "@/components/HeadlineArea";
+import { Introduction } from "@/components/Introduction";
+import { Profile } from "@/components/Profile";
+import { WorkList } from "@/components/WorkList";
+import { flashAnimation } from "@/styles/animation";
 
 export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -47,6 +47,7 @@ export default function Home() {
             pl: "2",
             animation: flashAnimation,
           }}
+          role="heading"
         >
           RM Portfolio
         </Heading>

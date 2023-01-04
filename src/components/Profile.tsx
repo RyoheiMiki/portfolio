@@ -1,6 +1,6 @@
 import { HStack, Avatar, Box } from "@chakra-ui/react";
 import React, { lazy, Suspense, useEffect, useLayoutEffect } from "react";
-import { SnsLinks } from "components/SnsLinks";
+import { SnsLinks } from "@/components/SnsLinks";
 
 export const Profile: React.FC = () => {
   return (
